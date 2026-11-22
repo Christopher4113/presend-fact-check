@@ -2,6 +2,11 @@
 
 A send-layer check that reads every factual claim in an AI-written outreach email, checks it against the prospect company's **live website**, and blocks the send when the site says something newer. Stale facts were the #1 failure in Frontrunner's [PipelineBench](https://usefr.com/pipelinebench): with a year-old prospect database, models used the stale number about half the time, even when the company's own site said otherwise.
 
+
+**Demo (44 s):** [watch the video](https://github.com/Christopher4113/presend-fact-check/releases/download/v0.1.0/presend-demo.mp4). A stale "Series C" is blocked, corrected to the $750M Series D from modal.com with the quote and source, fixed and re-checked.
+
+[![Demo: a stale Series C is blocked with the quote and source from modal.com](docs/demo.jpg)](https://github.com/Christopher4113/presend-fact-check/releases/download/v0.1.0/presend-demo.mp4)
+
 ```
 ProspectRecord (maybe stale) + draft
   1. extract claims   Groq, JSON mode, temp 0   funding, headcount, title, product, customer, location, news
