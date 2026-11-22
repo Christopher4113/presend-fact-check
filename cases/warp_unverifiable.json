@@ -1,0 +1,35 @@
+{
+  "name": "Warp: headcount the site never states",
+  "category": "unverifiable",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Jamie Park",
+    "person_title": "Head of Revenue",
+    "company": "Warp",
+    "domain": "warp.dev",
+    "headcount": 300,
+    "funding_stage": null,
+    "last_enriched": "2025-11-05"
+  },
+  "draft": "Hi Jamie,\n\nNow that Warp is past 300 employees with offices in SF and NY, I imagine GTM coordination is getting harder. Frontrunner gives every rep an agent that researches accounts and drafts outreach in your voice. Worth a quick call?",
+  "expected_decision": "REVIEW",
+  "expected": [
+    {
+      "match": [
+        "300",
+        "employees"
+      ],
+      "kind": "headcount",
+      "verdict": "unverified"
+    },
+    {
+      "match": [
+        "SF",
+        "NY",
+        "offices"
+      ],
+      "kind": "location",
+      "verdict": "supported"
+    }
+  ]
+}

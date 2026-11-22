@@ -1,0 +1,33 @@
+{
+  "name": "Encord: record says Series B",
+  "category": "stale",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Alex Morgan",
+    "person_title": "Head of Demand Gen",
+    "company": "Encord",
+    "domain": "encord.com",
+    "headcount": 90,
+    "funding_stage": "Series B",
+    "last_enriched": "2024-08-20"
+  },
+  "draft": "Hi Alex,\n\nCongrats on the Series B! Impressive that 300+ AI teams, including Woven by Toyota, already run on Encord. Frontrunner helps teams like yours spot accounts with buying signals and reach them before competitors do. Worth a chat?",
+  "expected_decision": "BLOCK",
+  "expected": [
+    {
+      "match": "Series B",
+      "kind": "funding",
+      "verdict": "stale",
+      "corrected": "$60M Series C (led by Wellington Management)",
+      "source": "https://encord.com/press"
+    },
+    {
+      "match": [
+        "300+",
+        "Woven"
+      ],
+      "kind": "customer",
+      "verdict": "supported"
+    }
+  ]
+}

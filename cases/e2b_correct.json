@@ -1,0 +1,36 @@
+{
+  "name": "E2B: Series A + Fortune 100",
+  "category": "all-correct",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Casey Nguyen",
+    "person_title": "Head of Sales",
+    "company": "E2B",
+    "domain": "e2b.dev",
+    "headcount": 40,
+    "funding_stage": "Series A",
+    "last_enriched": "2026-09-12"
+  },
+  "draft": "Hi Casey,\n\nCongrats on E2B's $21M Series A led by Insight Partners. 94 of the Fortune 100 signing up is a serious enterprise signal. Frontrunner helps sales teams turn that kind of interest into booked meetings with agents that research every account. Worth 15 minutes?",
+  "expected_decision": "PASS",
+  "expected": [
+    {
+      "match": [
+        "Series A",
+        "$21M",
+        "Insight"
+      ],
+      "kind": "funding",
+      "verdict": "supported"
+    },
+    {
+      "match": [
+        "94",
+        "Fortune 100"
+      ],
+      "kind": "customer",
+      "verdict": "supported"
+    }
+  ],
+  "note": "First draft said 88 (the figure on /about 'at the time' of the Series A). The checker flagged it stale: the homepage now says 94. The label was wrong, not the checker; draft updated to today's figure."
+}

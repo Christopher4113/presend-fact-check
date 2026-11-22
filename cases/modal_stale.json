@@ -1,0 +1,36 @@
+{
+  "name": "Modal: record says $355M Series C",
+  "category": "stale",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Sam Okafor",
+    "person_title": "Director of Sales",
+    "company": "Modal",
+    "domain": "modal.com",
+    "headcount": 120,
+    "funding_stage": "Series C",
+    "last_enriched": "2025-07-15"
+  },
+  "draft": "Hi Sam,\n\nCongrats on Modal's $355M Series C. With the team spread across New York, Stockholm, and San Francisco, keeping outbound coordinated must be a challenge. Frontrunner gives every rep an agent that researches accounts and drafts outreach. Would you be up for a demo?",
+  "expected_decision": "BLOCK",
+  "expected": [
+    {
+      "match": [
+        "Series C",
+        "$355M"
+      ],
+      "kind": "funding",
+      "verdict": "stale",
+      "corrected": "$750M Series D (led by Accel)",
+      "source": "https://modal.com/blog/1-billion-annualized-run-rate-series-d"
+    },
+    {
+      "match": [
+        "New York",
+        "Stockholm"
+      ],
+      "kind": "location",
+      "verdict": "supported"
+    }
+  ]
+}

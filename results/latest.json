@@ -1,0 +1,848 @@
+{
+  "summary": {
+    "decision_accuracy": "10/10",
+    "stale_precision": 1.0,
+    "stale_recall": 1.0,
+    "tp": 5,
+    "fp": 0,
+    "fn": 0,
+    "median_latency_ms": 31073,
+    "median_pages": 9.5
+  },
+  "rows": [
+    {
+      "case": "browserbase_stale",
+      "category": "stale",
+      "domain": "browserbase.com",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "ok": true,
+      "latency_ms": 5677,
+      "pages": 11,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "BLOCK",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "closing your Series A",
+            "kind": "funding",
+            "value": "Series A"
+          },
+          {
+            "id": "c2",
+            "text": "Browserbase is hiring in San Francisco",
+            "kind": "location",
+            "value": "San Francisco"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "stale",
+            "corrected_value": "Series B",
+            "source_url": "https://browserbase.com/blog/series-b-and-beyond",
+            "quote": "The product release coincides with a $40 million Series B financing round led by Notable Capital, with participation from existing investors CRV and Kleiner Perkins.",
+            "reason": "A later Series B round is announced, superseding the claimed Series A."
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://browserbase.com/careers",
+            "quote": "Browserbase is hiring full-time across engineering, product, and GTM in San Francisco.",
+            "reason": "The careers page explicitly states hiring in San Francisco."
+          }
+        ],
+        "fixed_draft": "Hi Jordan,\n\nCongrats on closing your Series B! Saw Browserbase is hiring in San Francisco, so pipeline is probably top of mind. Frontrunner's agents find accounts showing buying signals and draft the first touch for your reps. Worth a 15-minute look next week?",
+        "fixed_check": {
+          "decision": "PASS",
+          "claims": [
+            {
+              "id": "c1",
+              "text": "closing your Series B",
+              "kind": "funding",
+              "value": "Series B"
+            },
+            {
+              "id": "c2",
+              "text": "Browserbase is hiring in San Francisco",
+              "kind": "location",
+              "value": "San Francisco"
+            }
+          ],
+          "verdicts": [
+            {
+              "claim_id": "c1",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://browserbase.com/about",
+              "quote": "Our $40 million Series B, announced in June 2025, was led by Notable Capital with participation from CRV and Kleiner Perkins.",
+              "reason": "Excerpt confirms the company completed a Series B financing round."
+            },
+            {
+              "claim_id": "c2",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://browserbase.com/careers",
+              "quote": "Browserbase is hiring full-time across engineering, product, and GTM in San Francisco.",
+              "reason": "The careers page explicitly states hiring in San Francisco."
+            }
+          ],
+          "fixed_draft": null,
+          "fixed_check": null,
+          "pages_checked": [
+            "https://browserbase.com",
+            "https://browserbase.com/about",
+            "https://browserbase.com/company",
+            "https://browserbase.com/careers",
+            "https://browserbase.com/blog",
+            "https://browserbase.com/blog/series-b-and-beyond",
+            "https://browserbase.com/changelog/announcing-stagehand",
+            "https://browserbase.com/blog/company",
+            "https://browserbase.com/blog/company/page/2",
+            "https://browserbase.com/blog/company/page/3",
+            "https://browserbase.com/blog/case-study-general-intelligence-company"
+          ],
+          "latency_ms": 2608
+        },
+        "pages_checked": [
+          "https://browserbase.com",
+          "https://browserbase.com/about",
+          "https://browserbase.com/company",
+          "https://browserbase.com/careers",
+          "https://browserbase.com/blog",
+          "https://browserbase.com/blog/series-b-and-beyond",
+          "https://browserbase.com/changelog/announcing-stagehand",
+          "https://browserbase.com/blog/company",
+          "https://browserbase.com/blog/company/page/2",
+          "https://browserbase.com/blog/company/page/3",
+          "https://browserbase.com/blog/case-study-general-intelligence-company"
+        ],
+        "latency_ms": 5677
+      }
+    },
+    {
+      "case": "clerk_stale",
+      "category": "stale",
+      "domain": "clerk.com",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "ok": true,
+      "latency_ms": 46915,
+      "pages": 10,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "BLOCK",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "$30M Series B from CRV",
+            "kind": "funding",
+            "value": "$30M Series B"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "stale",
+            "corrected_value": "Series C",
+            "source_url": "https://clerk.com/blog/series-c",
+            "quote": "Of course, this Series C would not have been possible without our customers, partners, and the incredible team at Clerk.",
+            "reason": "A later funding round (Series C) is mentioned, superseding the claimed Series B."
+          }
+        ],
+        "fixed_draft": "Hi Priya,\n\nCongrats on the Series C from CRV. With a round like that, I imagine the team is scaling outbound fast. Frontrunner runs signal-based outreach for GTM teams and keeps your CRM up to date as prospects reply. Open to a quick call?",
+        "fixed_check": {
+          "decision": "REVIEW",
+          "claims": [
+            {
+              "id": "c1",
+              "text": "Congrats on the Series C from CRV.",
+              "kind": "funding",
+              "value": "Series C"
+            }
+          ],
+          "verdicts": [
+            {
+              "claim_id": "c1",
+              "verdict": "unverified",
+              "corrected_value": null,
+              "source_url": null,
+              "quote": null,
+              "reason": "No excerpt confirms a Series C round involving CRV"
+            }
+          ],
+          "fixed_draft": null,
+          "fixed_check": null,
+          "pages_checked": [
+            "https://clerk.com",
+            "https://clerk.com/about",
+            "https://clerk.com/careers",
+            "https://clerk.com/blog",
+            "https://clerk.com/blog/series-c",
+            "https://clerk.com/blog/series-b",
+            "https://clerk.com/blog/series-a",
+            "https://clerk.com/blog/a16z-seed",
+            "https://clerk.com/blog/clerk-raises-for-next-gen-auth",
+            "https://clerk.com/articles/clerk-vs-auth0-which-authentication-platform-fits-your-team"
+          ],
+          "latency_ms": 21630
+        },
+        "pages_checked": [
+          "https://clerk.com",
+          "https://clerk.com/about",
+          "https://clerk.com/careers",
+          "https://clerk.com/blog",
+          "https://clerk.com/blog/series-c",
+          "https://clerk.com/blog/series-b",
+          "https://clerk.com/blog/series-a",
+          "https://clerk.com/blog/a16z-seed",
+          "https://clerk.com/blog/clerk-raises-for-next-gen-auth",
+          "https://clerk.com/articles/clerk-vs-auth0-which-authentication-platform-fits-your-team"
+        ],
+        "latency_ms": 46915
+      }
+    },
+    {
+      "case": "e2b_correct",
+      "category": "all-correct",
+      "domain": "e2b.dev",
+      "expected": "PASS",
+      "decision": "PASS",
+      "ok": true,
+      "latency_ms": 20500,
+      "pages": 9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "PASS",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "E2B's $21M Series A led by Insight Partners",
+            "kind": "funding",
+            "value": "$21M Series A led by Insight Partners"
+          },
+          {
+            "id": "c2",
+            "text": "94 of the Fortune 100 signing up",
+            "kind": "customer",
+            "value": "94 of Fortune 100"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://e2b.dev/resources/series-a",
+            "quote": "E2B has raised a $21M Series A funding round led by global software investor Insight Partners",
+            "reason": "Excerpt confirms the $21M Series A led by Insight Partners and no later round is mentioned"
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://e2b.dev/about",
+            "quote": "94 Of the Fortune 100 signed up",
+            "reason": "The site states 94 of the Fortune 100 have signed up."
+          }
+        ],
+        "fixed_draft": null,
+        "fixed_check": null,
+        "pages_checked": [
+          "https://e2b.dev",
+          "https://e2b.dev/about",
+          "https://e2b.dev/careers",
+          "https://e2b.dev/blog",
+          "https://e2b.dev/resources/series-a",
+          "https://e2b.dev/resources/about-building-tools-for-llm-agent-with-flo-crivello-ceo-at-lindy-ai",
+          "https://e2b.dev/resources/about-deployment-evaluation-and-testing-of-agents-with-sully-omar-the-ceo-of-cognosys-ai",
+          "https://e2b.dev/cn/careers",
+          "https://e2b.dev/cn/about"
+        ],
+        "latency_ms": 20500
+      }
+    },
+    {
+      "case": "encord_stale",
+      "category": "stale",
+      "domain": "encord.com",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "ok": true,
+      "latency_ms": 87935,
+      "pages": 5,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "BLOCK",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Series B",
+            "kind": "funding",
+            "value": "Series B"
+          },
+          {
+            "id": "c2",
+            "text": "300+ AI teams",
+            "kind": "other",
+            "value": "300+ AI teams"
+          },
+          {
+            "id": "c3",
+            "text": "Woven by Toyota",
+            "kind": "customer",
+            "value": "Woven by Toyota"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "stale",
+            "corrected_value": "Series C",
+            "source_url": "https://encord.com/press",
+            "quote": "Encord raised $60 million in a Series C round led by Wellington Management, bringing total funding to $110 million",
+            "reason": "A later Series C round is announced, superseding the claimed Series B"
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://encord.com",
+            "quote": "Trusted by 300+ AI teams including Woven by Toyota, AXA, UiPath, Zipline, and more.",
+            "reason": "The website explicitly states they are trusted by 300+ AI teams."
+          },
+          {
+            "claim_id": "c3",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://encord.com",
+            "quote": "Trusted by 300+ AI teams including Woven by Toyota, AXA, UiPath, Zipline, and more.",
+            "reason": "Encord\u2019s website lists Woven by Toyota as a trusted AI team."
+          }
+        ],
+        "fixed_draft": "Hi Alex,\n\nCongrats on the Series C! Impressive that 300+ AI teams, including Woven by Toyota, already run on Encord. Frontrunner helps teams like yours spot accounts with buying signals and reach them before competitors do. Worth a chat?",
+        "fixed_check": {
+          "decision": "PASS",
+          "claims": [
+            {
+              "id": "c1",
+              "text": "Series C",
+              "kind": "funding",
+              "value": "Series C"
+            },
+            {
+              "id": "c2",
+              "text": "300+ AI teams",
+              "kind": "product",
+              "value": "300+ AI teams"
+            },
+            {
+              "id": "c3",
+              "text": "Woven by Toyota",
+              "kind": "customer",
+              "value": "Woven by Toyota"
+            }
+          ],
+          "verdicts": [
+            {
+              "claim_id": "c1",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://encord.com/press",
+              "quote": "Encord raised $60 million in a Series C round led by Wellington Management.",
+              "reason": "The excerpt confirms a Series C round and no later round is mentioned."
+            },
+            {
+              "claim_id": "c2",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://encord.com/about-us",
+              "quote": "Powering AI for 300+ teams",
+              "reason": "The site explicitly states Encord powers AI for over 300 teams, matching the claim."
+            },
+            {
+              "claim_id": "c3",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://encord.com",
+              "quote": "Trusted by 300+ AI teams including Woven by Toyota, AXA, UiPath, Zipline, and more.",
+              "reason": "Encord lists Woven by Toyota as a trusted AI team customer."
+            }
+          ],
+          "fixed_draft": null,
+          "fixed_check": null,
+          "pages_checked": [
+            "https://encord.com",
+            "https://encord.com/careers",
+            "https://encord.com/blog",
+            "https://encord.com/press",
+            "https://encord.com/about-us"
+          ],
+          "latency_ms": 44237
+        },
+        "pages_checked": [
+          "https://encord.com",
+          "https://encord.com/careers",
+          "https://encord.com/blog",
+          "https://encord.com/press",
+          "https://encord.com/about-us"
+        ],
+        "latency_ms": 87935
+      }
+    },
+    {
+      "case": "inngest_unverifiable",
+      "category": "unverifiable",
+      "domain": "inngest.com",
+      "expected": "REVIEW",
+      "decision": "REVIEW",
+      "ok": true,
+      "latency_ms": 7061,
+      "pages": 10,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "REVIEW",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "stepping in as Inngest's first VP of Sales",
+            "kind": "title",
+            "value": "VP of Sales"
+          },
+          {
+            "id": "c2",
+            "text": "$21M Series A",
+            "kind": "funding",
+            "value": "$21M Series A"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "unverified",
+            "corrected_value": null,
+            "source_url": null,
+            "quote": null,
+            "reason": "The excerpts do not mention a VP of Sales role at Inngest"
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://inngest.com/blog",
+            "quote": "We raised a $21M Series A to help companies ship and iterate faster.",
+            "reason": "The blog post from 09/16/2025 explicitly states the $21M Series A funding."
+          }
+        ],
+        "fixed_draft": null,
+        "fixed_check": null,
+        "pages_checked": [
+          "https://inngest.com",
+          "https://inngest.com/about",
+          "https://inngest.com/blog",
+          "https://inngest.com/press",
+          "https://www.inngest.com/blog/announcing-defer",
+          "https://www.inngest.com/blog/announcing-the-constraint-api",
+          "https://www.inngest.com/blog/announcing-function-runs-search",
+          "https://www.inngest.com/blog/announcing-realtime",
+          "https://www.inngest.com/blog/inngest-1-0-announcing-self-hosting-support",
+          "https://www.inngest.com/blog/announcing-dev-server-mcp"
+        ],
+        "latency_ms": 7061
+      }
+    },
+    {
+      "case": "mintlify_tricky",
+      "category": "tricky",
+      "domain": "mintlify.com",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "ok": true,
+      "latency_ms": 42729,
+      "pages": 9,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "BLOCK",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Congrats on the $18M Series A led by Andreessen Horowitz!",
+            "kind": "funding",
+            "value": "$18M Series A"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "stale",
+            "corrected_value": "$45M Series B",
+            "source_url": "https://www.mintlify.com/blog/series-b",
+            "quote": "Mintlify raises $45M Series B led by Andreessen Horowitz and Salesforce Ventures",
+            "reason": "A later Series B round supersedes the claimed Series A"
+          }
+        ],
+        "fixed_draft": "Hi Drew,\n\nCongrats on the $45M Series B led by Andreessen Horowitz! As Mintlify grows, getting in front of the right docs and devtools buyers matters more. Frontrunner's agents find those accounts and write the first touch. Open to a quick look?",
+        "fixed_check": {
+          "decision": "PASS",
+          "claims": [
+            {
+              "id": "c1",
+              "text": "Congrats on the $45M Series B led by Andreessen Horowitz!",
+              "kind": "funding",
+              "value": "$45M Series B"
+            }
+          ],
+          "verdicts": [
+            {
+              "claim_id": "c1",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://www.mintlify.com/blog/series-b",
+              "quote": "Mintlify raises $45M Series B led by Andreessen Horowitz and Salesforce Ventures",
+              "reason": "The website confirms the $45M Series B round led by Andreessen Horowitz."
+            }
+          ],
+          "fixed_draft": null,
+          "fixed_check": null,
+          "pages_checked": [
+            "https://mintlify.com",
+            "https://mintlify.com/careers",
+            "https://mintlify.com/blog",
+            "https://www.mintlify.com/blog/category/announcements",
+            "https://www.mintlify.com/blog/series-b",
+            "https://www.mintlify.com/blog/category/announcements/page/2",
+            "https://www.mintlify.com/blog/category/announcements/page/3",
+            "https://www.mintlify.com/blog/series-a",
+            "https://www.mintlify.com/blog/category/announcements/page/4"
+          ],
+          "latency_ms": 20305
+        },
+        "pages_checked": [
+          "https://mintlify.com",
+          "https://mintlify.com/careers",
+          "https://mintlify.com/blog",
+          "https://www.mintlify.com/blog/category/announcements",
+          "https://www.mintlify.com/blog/series-b",
+          "https://www.mintlify.com/blog/category/announcements/page/2",
+          "https://www.mintlify.com/blog/category/announcements/page/3",
+          "https://www.mintlify.com/blog/series-a",
+          "https://www.mintlify.com/blog/category/announcements/page/4"
+        ],
+        "latency_ms": 42729
+      }
+    },
+    {
+      "case": "modal_stale",
+      "category": "stale",
+      "domain": "modal.com",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "ok": true,
+      "latency_ms": 71340,
+      "pages": 9,
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "BLOCK",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Modal's $355M Series C",
+            "kind": "funding",
+            "value": "$355M Series C"
+          },
+          {
+            "id": "c2",
+            "text": "the team spread across New York, Stockholm, and San Francisco",
+            "kind": "location",
+            "value": "New York, Stockholm, San Francisco"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "stale",
+            "corrected_value": "$750M Series D",
+            "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "quote": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+            "reason": "A later Series D round supersedes the claimed Series C"
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://modal.com/company",
+            "quote": "New York City 233 Spring St Stockholm Sveav\u00e4gen 17 San Francisco 55 New Montgomery St",
+            "reason": "The company\u2019s site lists offices in New York, Stockholm, and San Francisco, confirming the claim."
+          }
+        ],
+        "fixed_draft": "Hi Sam,\n\nCongrats on Modal's $750M Series D. With the team spread across New York, Stockholm, and San Francisco, keeping outbound coordinated must be a challenge. Frontrunner gives every rep an agent that researches accounts and drafts outreach. Would you be up for a demo?",
+        "fixed_check": {
+          "decision": "PASS",
+          "claims": [
+            {
+              "id": "c1",
+              "text": "Modal's $750M Series D",
+              "kind": "funding",
+              "value": "$750M Series D"
+            },
+            {
+              "id": "c2",
+              "text": "team spread across New York, Stockholm, and San Francisco",
+              "kind": "location",
+              "value": "New York, Stockholm, San Francisco"
+            }
+          ],
+          "verdicts": [
+            {
+              "claim_id": "c1",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+              "quote": "Modal crosses $1B in Annualized Run Rate and raises $750M Series D",
+              "reason": "The excerpt confirms the $750M Series D funding and no later round is mentioned."
+            },
+            {
+              "claim_id": "c2",
+              "verdict": "supported",
+              "corrected_value": null,
+              "source_url": "https://modal.com/company",
+              "quote": "Infrastructure Security Engineer\nNew York, Stockholm, San Francisco",
+              "reason": "Excerpt shows a team member located in New York, Stockholm, and San Francisco, confirming the claim."
+            }
+          ],
+          "fixed_draft": null,
+          "fixed_check": null,
+          "pages_checked": [
+            "https://modal.com",
+            "https://modal.com/company",
+            "https://modal.com/blog",
+            "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+            "https://modal.com/blog/modal-series-c",
+            "https://modal.com/blog/announcing-our-series-b",
+            "https://modal.com/blog/general-availability-and-series-a",
+            "https://modal.com/blog/general-availability-and-series-a-press-release",
+            "https://modal.com/docs/sdk/js/latest/MetricSeries"
+          ],
+          "latency_ms": 34221
+        },
+        "pages_checked": [
+          "https://modal.com",
+          "https://modal.com/company",
+          "https://modal.com/blog",
+          "https://modal.com/blog/1-billion-annualized-run-rate-series-d",
+          "https://modal.com/blog/modal-series-c",
+          "https://modal.com/blog/announcing-our-series-b",
+          "https://modal.com/blog/general-availability-and-series-a",
+          "https://modal.com/blog/general-availability-and-series-a-press-release",
+          "https://modal.com/docs/sdk/js/latest/MetricSeries"
+        ],
+        "latency_ms": 71340
+      }
+    },
+    {
+      "case": "resend_correct",
+      "category": "all-correct",
+      "domain": "resend.com",
+      "expected": "PASS",
+      "decision": "PASS",
+      "ok": true,
+      "latency_ms": 33583,
+      "pages": 11,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "PASS",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "$18M Series A led by Andreessen Horowitz",
+            "kind": "funding",
+            "value": "$18M Series A"
+          },
+          {
+            "id": "c2",
+            "text": "launching Inboxes",
+            "kind": "product",
+            "value": "Inboxes"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://resend.com/blog/series-a",
+            "quote": "Resend just raised an $18M Series A led by Andreessen Horowitz.",
+            "reason": "The website explicitly states the $18M Series A was led by Andreessen Horowitz."
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://resend.com/blog/announcing-inboxes",
+            "quote": "Today we're announcing Inboxes.",
+            "reason": "The blog post announces the Inboxes product."
+          }
+        ],
+        "fixed_draft": null,
+        "fixed_check": null,
+        "pages_checked": [
+          "https://resend.com",
+          "https://resend.com/about",
+          "https://resend.com/team",
+          "https://resend.com/careers",
+          "https://resend.com/blog",
+          "https://resend.com/blog/announcing-resend-forge",
+          "https://resend.com/blog/announcing-inboxes",
+          "https://resend.com/blog/resend-raises-3m-seed-round",
+          "https://resend.com/changelog/announcing-the-php-sdk",
+          "https://resend.com/blog/series-a",
+          "https://resend.com/changelog/announcing-the-dotnet-sdk"
+        ],
+        "latency_ms": 33583
+      }
+    },
+    {
+      "case": "trigger_correct",
+      "category": "all-correct",
+      "domain": "trigger.dev",
+      "expected": "PASS",
+      "decision": "PASS",
+      "ok": true,
+      "latency_ms": 28563,
+      "pages": 9,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "PASS",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "$16M Series A led by Standard Capital",
+            "kind": "funding",
+            "value": "$16M Series A"
+          },
+          {
+            "id": "c2",
+            "text": "hiring in San Francisco",
+            "kind": "location",
+            "value": "San Francisco"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://trigger.dev/blog/series-a",
+            "quote": "Trigger.dev raises $16M Series A We've raised a $16M Series A led by Standard Capital, with participation from Y Combinator.",
+            "reason": "The site confirms the $16M Series A led by Standard Capital and no later round is mentioned."
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://trigger.dev/careers",
+            "quote": "DevRel (SF Events) Full-time | San Francisco",
+            "reason": "The careers page lists a San Francisco job, confirming hiring in that location."
+          }
+        ],
+        "fixed_draft": null,
+        "fixed_check": null,
+        "pages_checked": [
+          "https://trigger.dev",
+          "https://trigger.dev/careers",
+          "https://trigger.dev/blog",
+          "https://trigger.dev/blog/series-a",
+          "https://trigger.dev/blog/beta-to-latest-announcement",
+          "https://trigger.dev/blog/v2-end-of-life-announcement",
+          "https://trigger.dev/blog/v3-announcement",
+          "https://trigger.dev/blog/3m-dollar-seed-round",
+          "https://trigger.dev/blog/scrape-hacker-news"
+        ],
+        "latency_ms": 28563
+      }
+    },
+    {
+      "case": "warp_unverifiable",
+      "category": "unverifiable",
+      "domain": "warp.dev",
+      "expected": "REVIEW",
+      "decision": "REVIEW",
+      "ok": true,
+      "latency_ms": 28056,
+      "pages": 10,
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "result": {
+        "decision": "REVIEW",
+        "claims": [
+          {
+            "id": "c1",
+            "text": "Warp is past 300 employees",
+            "kind": "headcount",
+            "value": "300 employees"
+          },
+          {
+            "id": "c2",
+            "text": "offices in SF and NY",
+            "kind": "location",
+            "value": "San Francisco, New York"
+          }
+        ],
+        "verdicts": [
+          {
+            "claim_id": "c1",
+            "verdict": "unverified",
+            "corrected_value": null,
+            "source_url": null,
+            "quote": null,
+            "reason": "The provided excerpts contain no information about Warp's employee count."
+          },
+          {
+            "claim_id": "c2",
+            "verdict": "supported",
+            "corrected_value": null,
+            "source_url": "https://warp.dev/careers",
+            "quote": "Remote-first across the US & Canada, with offices in SF & NY.",
+            "reason": "The careers page explicitly states the company has offices in San Francisco and New York."
+          }
+        ],
+        "fixed_draft": null,
+        "fixed_check": null,
+        "pages_checked": [
+          "https://warp.dev",
+          "https://warp.dev/about",
+          "https://warp.dev/careers",
+          "https://warp.dev/blog",
+          "https://warp.dev/press",
+          "https://www.warp.dev/blog/warp-drive-series-b",
+          "https://www.warp.dev/blog/category/company",
+          "https://www.warp.dev/blog/warp-team-offsite-fall-2026",
+          "https://www.warp.dev/blog/warp-factories-microsoft-teams-azure-devops",
+          "https://www.warp.dev/articles/ai-coding-agents-azure-devops-microsoft-teams"
+        ],
+        "latency_ms": 28056
+      }
+    }
+  ]
+}

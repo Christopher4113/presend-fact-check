@@ -1,0 +1,28 @@
+{
+  "name": "Clerk: record says $30M Series B",
+  "category": "stale",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Priya Shah",
+    "person_title": "VP Marketing",
+    "company": "Clerk",
+    "domain": "clerk.com",
+    "headcount": 60,
+    "funding_stage": "Series B",
+    "last_enriched": "2024-03-02"
+  },
+  "draft": "Hi Priya,\n\nCongrats on the $30M Series B from CRV. With a round like that, I imagine the team is scaling outbound fast. Frontrunner runs signal-based outreach for GTM teams and keeps your CRM up to date as prospects reply. Open to a quick call?",
+  "expected_decision": "BLOCK",
+  "expected": [
+    {
+      "match": [
+        "Series B",
+        "$30M"
+      ],
+      "kind": "funding",
+      "verdict": "stale",
+      "corrected": "$50M Series C (Menlo, Anthology Fund)",
+      "source": "https://clerk.com/blog/series-c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Browserbase: record still says Series A",
+  "category": "stale",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Jordan Reyes",
+    "person_title": "Head of Growth",
+    "company": "Browserbase",
+    "domain": "browserbase.com",
+    "headcount": 25,
+    "funding_stage": "Series A",
+    "last_enriched": "2024-09-10"
+  },
+  "draft": "Hi Jordan,\n\nCongrats on closing your Series A! Saw Browserbase is hiring in San Francisco, so pipeline is probably top of mind. Frontrunner's agents find accounts showing buying signals and draft the first touch for your reps. Worth a 15-minute look next week?",
+  "expected_decision": "BLOCK",
+  "expected": [
+    {
+      "match": "Series A",
+      "kind": "funding",
+      "verdict": "stale",
+      "corrected": "$40M Series B (June 2025)",
+      "source": "https://browserbase.com/about"
+    },
+    {
+      "match": "San Francisco",
+      "kind": "location",
+      "verdict": "supported"
+    }
+  ]
+}

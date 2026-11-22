@@ -1,0 +1,29 @@
+{
+  "name": "Mintlify: newer round only in a blog post, old round still on site",
+  "category": "tricky",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Drew Kim",
+    "person_title": "Head of GTM",
+    "company": "Mintlify",
+    "domain": "mintlify.com",
+    "headcount": 35,
+    "funding_stage": "Series A",
+    "last_enriched": "2024-06-18"
+  },
+  "draft": "Hi Drew,\n\nCongrats on the $18M Series A led by Andreessen Horowitz! As Mintlify grows, getting in front of the right docs and devtools buyers matters more. Frontrunner's agents find those accounts and write the first touch. Open to a quick look?",
+  "expected_decision": "BLOCK",
+  "expected": [
+    {
+      "match": [
+        "Series A",
+        "$18M"
+      ],
+      "kind": "funding",
+      "verdict": "stale",
+      "corrected": "$45M Series B (a16z, Salesforce Ventures)",
+      "source": "https://www.mintlify.com/blog/series-b"
+    }
+  ],
+  "note": "The homepage says nothing about funding. The Series A announcement is still on the blog; the Series B is only in /blog/series-b. The judge has to prefer the more recent page."
+}

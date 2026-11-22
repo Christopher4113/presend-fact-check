@@ -1,0 +1,12 @@
+== modal_stale
+5/5  stale      "Modal's $355M Series C"  ['stale', 'stale', 'stale', 'stale', 'stale']
+5/5  supported  "the team spread across New York, Stockholm, and San Francisco"  ['supported', 'supported', 'supported', 'supported', 'supported']
+decision 5/5: ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']
+== encord_stale
+5/5  stale      "Series B"  ['stale', 'stale', 'stale', 'stale', 'stale']
+5/5  supported  "300+ AI teams"  ['supported', 'supported', 'supported', 'supported', 'supported']
+5/5  supported  "Woven by Toyota"  ['supported', 'supported', 'supported', 'supported', 'supported']
+decision 5/5: ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']
+== clerk_stale
+5/5  stale      "Congrats on the $30M Series B from CRV."  ['stale', 'stale', 'stale', 'stale', 'stale']
+decision 5/5: ['BLOCK', 'BLOCK', 'BLOCK', 'BLOCK', 'BLOCK']

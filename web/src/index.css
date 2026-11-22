@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Tokens lifted from usefr.com: cream page, near-black ink, forest green accent, mono body. */
+@theme {
+  --color-page: #f9f8f6;
+  --color-panel: #ffffff;
+  --color-ink: #0a0a0a;
+  --color-muted: #6b6b66;
+  --color-line: #e6e3dd;
+  --color-forest: #0a5737;
+  --color-forest-deep: #004225;
+  --color-mint: #c7edd6;
+  --color-mauve: #d8bcd4;
+  --color-amber-soft: #f3e3bf;
+  --color-amber-ink: #7a5300;
+  --color-brick: #9b2c22;
+  --color-brick-soft: #f6dfda;
+  --font-mono: "SF Mono", SFMono-Regular, ui-monospace, Menlo, Consolas, monospace;
+  --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --radius-sm: 4px;
+}
+
+html, body { background: var(--color-page); color: var(--color-ink); }
+body { font-family: var(--font-mono); font-size: 13px; -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--color-forest); outline-offset: 2px; }
+@keyframes spin { to { transform: rotate(360deg) } }
+.spin { animation: spin .8s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .spin { animation: none; } }

@@ -1,0 +1,31 @@
+{
+  "name": "Inngest: title the site never mentions",
+  "category": "unverifiable",
+  "labelled": "2026-11-22",
+  "prospect": {
+    "person_name": "Riley Carter",
+    "person_title": "VP of Sales",
+    "company": "Inngest",
+    "domain": "inngest.com",
+    "headcount": null,
+    "funding_stage": "Series A",
+    "last_enriched": "2026-10-20"
+  },
+  "draft": "Hi Riley,\n\nCongrats on stepping in as Inngest's first VP of Sales, and on the $21M Series A. Building a sales team from scratch is a lot of research and outreach. Frontrunner's agents handle both. Would a demo be useful?",
+  "expected_decision": "REVIEW",
+  "expected": [
+    {
+      "match": "VP of Sales",
+      "kind": "title",
+      "verdict": "unverified"
+    },
+    {
+      "match": [
+        "Series A",
+        "$21M"
+      ],
+      "kind": "funding",
+      "verdict": "supported"
+    }
+  ]
+}
